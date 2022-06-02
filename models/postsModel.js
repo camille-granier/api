@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const postsModel = mongoose.model(
+const PostsModel = mongoose.model(
     "node-api",
     {
         author: {
@@ -19,4 +19,4 @@ const postsModel = mongoose.model(
     "posts"
 )
 
-module.exports = { postsModel };
+module.exports = { PostsModel };
