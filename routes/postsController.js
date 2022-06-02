@@ -13,4 +13,11 @@ router.get('/', (req, res) => {
     })
 })
 
+router.post('/', (req, res) => {
+    const newRecord = new postsModel({
+        author: req.body.author,
+        message: req.body.message
+    })
+})
+
 module.exports = router;
